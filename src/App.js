@@ -1,12 +1,12 @@
 import React from 'react'
-import Homedesert from './Dessert/Homedesert'
-import Homecoktail from './Cooktail/Homecoktail'
+import Homedesert from './Burgers/Homedesert'
+import Homecoktail from './NutritionF/Homecoktail'
 
 function App() {
   return (
     <>
-      <Homedesert/>
       <Homecoktail/>
+      <Homedesert/>
     </>
   )
 }

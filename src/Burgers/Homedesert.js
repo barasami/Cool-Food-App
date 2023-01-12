@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {deSert} from './dessert'
+import {deSert} from './burger'
 
 function Homedesert() {
   const [allDesset,setallDessert]=useState([])
@@ -14,16 +14,7 @@ function Homedesert() {
 
   return (
     <>
-        {allDesset.map((desert)=>{
-          const {desc,name}=desert
-          return(
-            <>
-              <p>{name}</p>
-              <p>{desc}</p>
-            </>
-          )
-
-        })}
+     <p>Burgers</p>
     </>
   )
 }

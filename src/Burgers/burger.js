@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const Url='https://beverages-and-desserts.p.rapidapi.com/desserts/1'
+const Url='https://burgers-hub.p.rapidapi.com/burgers'
 
 const options = {
     headers: {
       'X-RapidAPI-Key': '87f0c01e35msh8962c83c8aef89ap1e9713jsnbf3fe9f2f818',
-      'X-RapidAPI-Host': 'beverages-and-desserts.p.rapidapi.com'
+      'X-RapidAPI-Host': 'burgers-hub.p.rapidapi.com'
     }
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import Form from '../Form/Form'
 
-import { myCooktail } from './cooktail'
+import { myCooktail } from './nutrition'
 
 function Homecoktail() {
     const [cooktail,setCooktail]=useState([])
@@ -13,12 +14,8 @@ function Homecoktail() {
     },[])
   return (
     <>
-      {cooktail.map((Random)=>{
-        const{name}=Random
-        return(
-          <p>{name}</p>
-        )
-      })}
+      <Form/>
+      <p>Nutrition value</p>
     </>
   )
 }
