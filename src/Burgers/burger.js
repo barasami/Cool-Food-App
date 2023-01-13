@@ -12,9 +12,9 @@ const options = {
 
 export  const deSert=async()=>{
     try {
-        const {myDessert:{myDessert}}= await axios.get(Url,options)
-        return myDessert
-        
+        const data= await axios.get(Url,options)
+        return data
+
     } catch (error) {
         console.log(error);
         

@@ -6,7 +6,7 @@ function Homedesert() {
 
   useEffect(()=>{
     deSert()
-    .then((data)=>{
+    .then(({data})=>{
       console.log(data);
       setallDessert(data)
     })
@@ -14,7 +14,15 @@ function Homedesert() {
 
   return (
     <>
-     <p>Burgers</p>
+     {allDesset.map((myburger)=>{
+      const{desc,name}=myburger
+      return(
+        <>
+          <p>{name}</p>
+          <p>{desc}</p>
+        </>
+      )
+     })}
     </>
   )
 }

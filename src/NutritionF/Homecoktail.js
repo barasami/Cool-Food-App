@@ -11,7 +11,7 @@ function Homecoktail() {
     const [cooktail,setCooktail]=useState([])
     useEffect(()=>{
         myCooktail()
-        .then((data)=>{
+        .then(({data})=>{
             setCooktail(data)
             console.log(data);
         })
@@ -19,7 +19,6 @@ function Homecoktail() {
   return (
     <>
       <Form onSubmitdata={mySearch}/>
-      <p>Nutrition value</p>
     </>
   )
 }
