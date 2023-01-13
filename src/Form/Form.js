@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import TextField from '@mui/material/TextField';
 
-function Form() {
+function Form({onSubmitdata}) {
     const[food,setFood]=useState('')
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        console.log(food);
-
+        if(!food || food === '') return;
+        onSubmitdata(food)
+        setFood('')
     }
   return (
     <>
@@ -15,14 +16,13 @@ function Form() {
             <TextField
                 required
                 id="outlined-required"
-                label="Required"
+                label="Enter your Food"
                 value={food}
                 onChange={e=>setFood(e.target.value)}
             />
             <button onClick={handleSubmit}>
                 Search
             </button>
-
         </form>
         
     </>

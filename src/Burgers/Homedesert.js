@@ -6,7 +6,7 @@ function Homedesert() {
 
   useEffect(()=>{
     deSert()
-    .then(({data})=>{
+    .then((data)=>{
       console.log(data);
       setallDessert(data)
     })

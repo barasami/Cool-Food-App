@@ -3,18 +3,22 @@ import Form from '../Form/Form'
 
 import { myCooktail } from './nutrition'
 
+const mySearch=(value)=>{
+  console.log(value);
+}
+
 function Homecoktail() {
     const [cooktail,setCooktail]=useState([])
     useEffect(()=>{
         myCooktail()
-        .then(({data})=>{
+        .then((data)=>{
             setCooktail(data)
             console.log(data);
         })
     },[])
   return (
     <>
-      <Form/>
+      <Form onSubmitdata={mySearch}/>
       <p>Nutrition value</p>
     </>
   )

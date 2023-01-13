@@ -14,7 +14,7 @@ const options = {
 
 export const myCooktail=async()=>{
     try {
-        const cooktails=await axios.get(Url,options)
+        const {cooktails:{cooktails}}=await axios.get(Url,options)
         return cooktails
     } catch (error) {
         console.log(error);
