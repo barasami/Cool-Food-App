@@ -3,11 +3,13 @@ import Homedesert from './Burgers/Homedesert'
 import Homecoktail from './NutritionF/Homecoktail'
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
+import Beverege from './Beverages/Beverege'
 
 function App() {
   return (
     <>
       <Navbar/>
+      <Beverege/>
       <Homecoktail/>
       <Homedesert/>
       <Footer/>
