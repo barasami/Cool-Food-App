@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Beverege/>
       <Homecoktail/>
+      <Beverege/>
       <Homedesert/>
       <Footer/>
     </>

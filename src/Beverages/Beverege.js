@@ -12,7 +12,19 @@ function Beverege() {
         })
     },[])
   return (
-    <div>Beverege</div>
+    <>
+      {beverage.map((bev)=>{
+        const{desc,name,img}=bev
+        const small=img[0].sm
+        return(
+          <>
+            <p>{name}</p>
+            <img src={small} alt={name}/>
+            <p>{desc}</p>
+          </>
+        )
+      })}
+    </>
   )
 }
 
