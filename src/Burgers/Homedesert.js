@@ -15,14 +15,18 @@ function Homedesert() {
   return (
     <>
      {allDesset.map((myburger)=>{
-      const{desc,name,images, price}=myburger
+      const{desc,name,images,ingredients}=myburger
       let small=images[0].sm
+      let ingname=ingredients[1].name
+      let ingimage=ingredients[0].img
       return(
         <>
           <p>{name}</p>
           <p>{desc}</p>
           <img src={small} alt={name}/>
-          <p>{price}</p>
+          <p>Ingredients</p>
+          <img src={ingimage} alt={name}/>
+          <p>{ingname}</p>
         </>
       )
      })}
