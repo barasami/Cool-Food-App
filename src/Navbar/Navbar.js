@@ -11,9 +11,10 @@ function Navbar() {
   return (
     <nav className='nav'>
       <div className='coolTittle'>
-        <p>
-          hello there
-        </p>
+        <h3 className='title'>
+          Food Hub
+        </h3>
+        <hr className='line'></hr>
       </div>
       <div className='sidenav'>
         <div className='home'>

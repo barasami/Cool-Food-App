@@ -4,6 +4,7 @@ import Homecoktail from './NutritionF/Homecoktail'
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
 import Beverege from './Beverages/Beverege'
+import './App.css'
 
 function App() {
   return (
