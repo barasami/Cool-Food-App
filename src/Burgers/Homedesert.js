@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import {deSert} from './burger'
 import './Burger.css'
+import { Paper,Typography } from '@mui/material'
+
 
 
 function Homedesert() {
@@ -23,14 +25,14 @@ function Homedesert() {
       let ingimage=ingredients[0].img
       return(
         <>
-          <div className='burger'>
-            <p>{name}</p>
-            <p>{desc}</p>
+          <Paper elevation={5} className='burger'>
+            <Typography variant='h4' color='#00a152'>{name}</Typography>
+            <Typography>{desc}</Typography>
             <img src={small} alt={name}/>
             <p>Ingredients</p>
             <img src={ingimage} alt={name}/>
             <p>{ingname}</p>
-          </div>
+          </Paper>
         </>
       )
      })}

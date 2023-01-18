@@ -4,6 +4,7 @@ import { FaHome } from 'react-icons/fa';
 import {FaMoon} from 'react-icons/fa'
 import {BsCupStraw} from 'react-icons/bs'
 import {MdNoFood} from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,13 +19,13 @@ function Navbar() {
       </div>
       <div className='sidenav'>
         <div className='home'>
-          <FaHome/> Home
+          <Link to='/' className='mlink'><FaHome className='icon'/>Home</Link>
         </div>
         <div className='drink'>
-          <BsCupStraw/> Drinks
+          <Link to='/drinks' className='mlink'><BsCupStraw className='icon'/>Drinks</Link>
         </div>
         <div className='food'>
-          <MdNoFood/> Burger
+          <Link to='/burgers' className='mlink'><MdNoFood className='icon'/> Burger</Link>
         </div>
         <div className='switch'>
           <FaMoon/> Mode

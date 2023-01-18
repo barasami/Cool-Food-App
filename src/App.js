@@ -5,16 +5,24 @@ import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
 import Beverege from './Beverages/Beverege'
 import './App.css'
+import {BrowserRouter as Router, Routes,Route } from 'react-router-dom'
+import { Fragment } from 'react'
+
+
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Homecoktail/>
-      <Beverege/>
-      <Homedesert/>
-      <Footer/>
-    </>
+    <Router>
+      <Fragment>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Homecoktail/>}  />
+          <Route path='/burgers' element={<Homedesert/>}  />
+          <Route path='/drinks' element={<Beverege/>}  />
+        </Routes>
+        <Footer/>
+      </Fragment>
+    </Router>
   )
 }
 

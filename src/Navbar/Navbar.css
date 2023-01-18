@@ -33,6 +33,13 @@
     margin-bottom: .4em;
 
 }
+.icon{
+    color: white;
+}
+.mlink{
+    text-decoration: none;
+    color: white;
+}
 
 .coolTittle{
     margin-top: .6em;
