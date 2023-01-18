@@ -10,11 +10,24 @@ import {MdNoFood} from 'react-icons/md'
 function Navbar() {
   return (
     <nav className='nav'>
+      <div className='coolTittle'>
+        <p>
+          hello there
+        </p>
+      </div>
       <div className='sidenav'>
-        <p><FaHome/></p>
-        <p><BsCupStraw/></p>
-        <p><MdNoFood/></p>
-        <p><FaMoon/></p>
+        <div className='home'>
+          <FaHome/> Home
+        </div>
+        <div className='drink'>
+          <BsCupStraw/> Drinks
+        </div>
+        <div className='food'>
+          <MdNoFood/> Burger
+        </div>
+        <div className='switch'>
+          <FaMoon/> Mode
+        </div>
       </div>
 
     </nav>

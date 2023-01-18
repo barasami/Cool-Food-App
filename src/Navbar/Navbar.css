@@ -21,6 +21,26 @@
    
 }
 
-.sidenav{
+.coolTittle{
+    margin-top: .6em;
+    height: 30vh;
+    padding: 2px;
+}
 
+.sidenav{
+    height: 20px;
+    padding: 2em;
+
+}
+.home{
+
+}
+.drink{
+
+}
+.food{
+
+}
+.switch{
+    
 }
