@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.coktail{
+    top: 10em;
+    padding: .3em;
+    height: 12vh;
+    background: linear-gradient(rgba(7, 198, 93, 0.3),rgba(2, 82, 38, 0.3));
+    margin-top: 1em;
+    margin-left: 35%;
+    margin-right: 15%;
+    margin-bottom: 1.5em;
+    align-items: center;
+    justify-content: center;
+
+}

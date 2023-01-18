@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { allBeverage } from './beverage'
+import './Beverage.css'
+
 
 function Beverege() {
 
@@ -18,9 +20,11 @@ function Beverege() {
         const small=img[0].sm
         return(
           <>
-            <p>{name}</p>
-            <img src={small} alt={name}/>
-            <p>{desc}</p>
+            <div className='beverage'>
+              <p>{name}</p>
+              <img src={small} alt={name}/>
+              <p>{desc}</p>
+            </div>
           </>
         )
       })}

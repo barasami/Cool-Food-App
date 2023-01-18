@@ -7,8 +7,8 @@ function Footer() {
   return (
     <footer className='footer'>
         <div  className='footcontent'>
-            <p className='about'>About Me</p>
-            <p className='copyright'>&copy;Nutridata {thisYear},All rights reserved</p>
+          <p className='about'>About Me</p>
+          <p className='copyright'>&copy;Nutridata {thisYear},All rights reserved</p>
         </div>
     </footer>
   )

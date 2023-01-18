@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Form from '../Form/Form'
+import './nutrition.css'
 
 import { myCooktail } from './nutrition'
 
@@ -18,7 +19,9 @@ function Homecoktail() {
     },[])
   return (
     <>
-      <Form onSubmitdata={mySearch}/>
+      <div className='coktail'>
+        <Form onSubmitdata={mySearch}/>
+      </div>
     </>
   )
 }
