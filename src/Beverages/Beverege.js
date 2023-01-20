@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { allBeverage } from './beverage'
 import './Beverage.css'
+import { Paper,Typography } from '@mui/material'
 
 
 function Beverege() {
@@ -20,11 +21,11 @@ function Beverege() {
         const small=img[0].sm
         return(
           <>
-            <div className='beverage'>
+            <Paper elevation={2} className='beverage'>
               <p>{name}</p>
               <img src={small} alt={name}/>
               <p>{desc}</p>
-            </div>
+            </Paper>
           </>
         )
       })}

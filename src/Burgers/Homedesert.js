@@ -25,13 +25,13 @@ function Homedesert() {
       let ingimage=ingredients[0].img
       return(
         <>
-          <Paper elevation={5} className='burger'>
-            <Typography variant='h4' color='#00a152'>{name}</Typography>
-            <Typography>{desc}</Typography>
-            <img src={small} alt={name}/>
-            <p>Ingredients</p>
-            <img src={ingimage} alt={name}/>
-            <p>{ingname}</p>
+          <Paper elevation={2} className='burger'>
+            <Typography variant='h5' color='#00a152' padding={1}>{name}</Typography>
+            <Typography marginLeft={3.3} padding={1}>{desc}</Typography>
+            <img src={small} alt={name} className='image'/>
+            <Typography color='secondary' variant='h6' marginLeft={3}>Ingredients</Typography>
+            <img  src={ingimage} alt={name} />
+            <Typography padding={2}>{ingname}</Typography>
           </Paper>
         </>
       )
