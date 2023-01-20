@@ -1,14 +1,15 @@
 import React from 'react'
 import './Navbar.css'
 import { FaHome } from 'react-icons/fa';
-import {FaMoon} from 'react-icons/fa'
+// import {FaMoon} from 'react-icons/fa'
 import {BsCupStraw} from 'react-icons/bs'
 import {MdNoFood} from 'react-icons/md'
 import { Link } from 'react-router-dom';
+import Switch from '@mui/material/Switch';
 
 
 
-function Navbar() {
+function Navbar({mode,setMode}) {
   return (
     <nav className='nav'>
       <div className='coolTittle'>
@@ -28,7 +29,7 @@ function Navbar() {
           <Link to='/burgers' className='mlink'><MdNoFood className='icon'/> Burger</Link>
         </div>
         <div className='switch'>
-          <FaMoon/> Mode
+          <Switch className='switching' defaultChecked color='default' onChange={e=>setMode(mode  === 'light'?'dark' : 'light')}/> Mode
         </div>
       </div>
 
