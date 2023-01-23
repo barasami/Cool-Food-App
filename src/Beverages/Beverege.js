@@ -28,13 +28,13 @@ function Beverege() {
         const{desc,name,img}=bev
         const small=img[0].sm
         return(
-          <>
+          <div key={name}>
             <Paper elevation={2} className='beverage'>
               <Typography color='#00a152' padding={1} variant='h5'>{name}</Typography>
-              <img src={small} alt={name}/>
+              <img src={small} alt={name} className='image'/>
               <Typography padding={2} marginLeft={1.5}>{desc}</Typography>
             </Paper>
-          </>
+          </div>
         )
       })}
       </div>}

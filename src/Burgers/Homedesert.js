@@ -30,7 +30,7 @@ function Homedesert() {
           let ingname=ingredients[1].name
           let ingimage=ingredients[0].img
           return(
-            <>
+            <div key={name}>
               <Paper elevation={2} className='burger'>
                 <Typography variant='h5' color='#00a152' padding={1}>{name}</Typography>
                 <Typography marginLeft={3.3} padding={1}>{desc}</Typography>
@@ -39,7 +39,7 @@ function Homedesert() {
                 <img  src={ingimage} alt={name} className='image' />
                 <Typography padding={2}>{ingname}</Typography>
               </Paper>
-            </>
+            </div>
           )
         })}
      </div>}
