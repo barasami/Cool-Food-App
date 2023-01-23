@@ -34,9 +34,9 @@ function Homedesert() {
               <Paper elevation={2} className='burger'>
                 <Typography variant='h5' color='#00a152' padding={1}>{name}</Typography>
                 <Typography marginLeft={3.3} padding={1}>{desc}</Typography>
-                <img src={small} alt={name} className='image'/>
+                <img src={small} alt={name} className='image2' bg-color='background.default'/>
                 <Typography color='secondary' variant='h6' marginLeft={3}>Ingredients</Typography>
-                <img  src={ingimage} alt={name} />
+                <img  src={ingimage} alt={name} className='image' />
                 <Typography padding={2}>{ingname}</Typography>
               </Paper>
             </>

@@ -5,20 +5,7 @@ import { Paper,Typography } from '@mui/material'
 import { CircularProgress } from '@mui/material'
 
 
-const day=new Date()
-const myday=day.getDate()
-const myMonth=day.getMonth()
-const year=day.getFullYear()
-const minutes=day.getMinutes()
-const hour=day.getHours()
 
-
-const time=`${hour}:${minutes}`
-console.log(myday);
-console.log(day);
-console.log(year);
-console.log(myMonth);
-console.log(time);
 
 
 function Beverege() {
