@@ -25,10 +25,9 @@ function Homedesert() {
       {loading ? <CircularProgress className='progress' color="success" /> : 
       <div>
         {allDesset.map((myburger)=>{
-          const{desc,name,images,ingredients}=myburger
+          const{desc,name,images}=myburger
           let small=images[0].sm
-          let ingname=ingredients[1].name
-          let ingimage=ingredients[0].img
+          
           return(
             <div key={name}>
               <Paper elevation={2} className='burger'>
@@ -36,8 +35,7 @@ function Homedesert() {
                 <Typography marginLeft={3.3} padding={1}>{desc}</Typography>
                 <img src={small} alt={name} className='image2' bg-color='background.default'/>
                 <Typography color='secondary' variant='h6' marginLeft={3}>Ingredients</Typography>
-                <img  src={ingimage} alt={name} className='image' />
-                <Typography padding={2}>{ingname}</Typography>
+                
               </Paper>
             </div>
           )

@@ -38,9 +38,9 @@ function Beverege() {
               <Typography color='#00a152' padding={1} variant='h5'>{name}</Typography>
               <img src={small} alt={name} className='image'/>
               <Typography padding={2} marginLeft={1.5}>{desc}</Typography>
-              <Typography variant='h6'>Ingredients</Typography>
-              <Typography>{myname}</Typography>
-              <img src={myimg} alt={myname}/>
+              <Typography variant='h6' color='secondary' pl={1}>Ingredients</Typography>
+              <Typography color='success' pl={3} >{myname}</Typography>
+              <img src={myimg} alt={myname} className='image'/>
             </Paper>
           </div>
         )
