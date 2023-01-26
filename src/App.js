@@ -24,7 +24,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Router>
         <Fragment>
-          <Navbar mode={mode} setMode={setMode}/>
+          <Navbar mode={mode} setMode={setMode} />
           <Routes>
             <Route path='/' element={<Homecoktail/>}  />
             <Route path='/burgers' element={<Homedesert/>}  />
