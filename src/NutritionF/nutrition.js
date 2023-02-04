@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Url='https://random-recipes.p.rapidapi.com/ai-quotes/3'
+
 
 const options = {
     headers: {
@@ -9,9 +9,9 @@ const options = {
     }
 };
 
-export const myCooktail=async()=>{
+export const myCooktail=async(foodid)=>{
     try {
-        const data=await axios.get(Url,options)
+        const data=await axios.get(`https://random-recipes.p.rapidapi.com/ai-quotes/${foodid}`,options)
         return data
     } catch (error) {
         console.log(error);
