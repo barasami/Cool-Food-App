@@ -22,6 +22,18 @@ function Homecoktail() {
       <div className='coktail'>
         <Form onSubmitdata={mySearch}/>
       </div>
+      <div>
+        {cooktail.map((mycocktail)=>{
+
+          const {cocktail_name}=mycocktail
+          return(
+            <>
+              <p>{cocktail_name}</p>
+            </>
+          )
+
+        })}
+      </div>
     </>
   )
 }
