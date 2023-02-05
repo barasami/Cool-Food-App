@@ -4,12 +4,11 @@ import './nutrition.css'
 
 import { myCooktail } from './nutrition'
 
-const mySearch=(value)=>{
-  return value === foodid;
-}
+
 
 function Homecoktail() {
     const [cooktail,setCooktail]=useState([])
+    const[foodid,setFoodid]=useState(1)
     useEffect(()=>{
       myCooktail(foodid)
         .then(({data})=>{
@@ -17,6 +16,11 @@ function Homecoktail() {
             console.log(data);
         })
     },[foodid])
+
+  const mySearch=(value)=>{
+    value = setFoodid
+    return
+  }
   return (
     <>
       <div className='coktail'>
