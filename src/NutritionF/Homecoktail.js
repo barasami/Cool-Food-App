@@ -13,6 +13,7 @@ const mySearch=(value)=>{
 
 
 function Homecoktail() {
+  let myArray=' '
   const [cooktail,setCooktail]=useState([])
   const[foodid,setFoodid]=useState(1)
   useEffect(()=>{
@@ -31,18 +32,19 @@ function Homecoktail() {
       <div>
         {cooktail.map((allthings)=>{
           const{image,title,ingredients}=allthings
+          
           for (let a = 0; a < ingredients.length; a++) {
             const inredient = ingredients[a];
+            myArray +=inredient   
+              
           }
-          
+          console.log(myArray);
           return(
             <>
               <div>
                 <Typography color='secondary'>{title}</Typography>
                 <img src={image} alt={title}/>
-                {/* <ol>
-                  <li>{myIng()}</li>
-                </ol> */}
+                
               </div>
             </>
           )
