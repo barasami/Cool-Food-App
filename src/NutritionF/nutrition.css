@@ -17,3 +17,14 @@
     justify-content: center;
 
 }
+.nutrition{
+    margin-left:25% ;
+    margin-right: 15%;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.img{
+    height: 50%;
+    width: 50%;
+    margin-left: 2em;
+}

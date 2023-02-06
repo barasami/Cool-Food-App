@@ -41,11 +41,13 @@ function Homecoktail() {
           console.log(myArray);
           return(
             <>
-              <div>
-                <Typography color='secondary'>{title}</Typography>
-                <img src={image} alt={title}/>
-                
-              </div>
+              <Paper className='nutrition'>
+                <Typography color='secondary' variant='h6' ml={1}>{title}</Typography>
+                <img src={image} alt={title} className='img'/>
+                <hr></hr>
+                <Typography variant='h7' color='secondary'mt={2}>Ingredients</Typography>
+                <Typography color='success' ml={1}>{myArray}</Typography>
+              </Paper>
             </>
           )
         })}
