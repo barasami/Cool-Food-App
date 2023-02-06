@@ -32,8 +32,7 @@ function Homecoktail() {
         {cooktail.map((allthings)=>{
           const{image,title,ingredients}=allthings
           for (let a = 0; a < ingredients.length; a++) {
-            const ingredient = ingredients[a];
-            
+            const inredient = ingredients[a];
           }
           
           return(
@@ -42,7 +41,7 @@ function Homecoktail() {
                 <Typography color='secondary'>{title}</Typography>
                 <img src={image} alt={title}/>
                 {/* <ol>
-                  <li>{myIngredient}</li>
+                  <li>{myIng()}</li>
                 </ol> */}
               </div>
             </>
