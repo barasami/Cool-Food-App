@@ -16,10 +16,13 @@ function Homecoktail() {
   let myArray=' '
   const [cooktail,setCooktail]=useState([])
   const[foodid,setFoodid]=useState(1)
+  const[loading,setLoading]=useState(false)
   useEffect(()=>{
+    setLoading(true)
     myCooktail(foodid)
       .then(({data})=>{
         setCooktail(data)
+        setLoading(false)
         console.log(data);
       })
   },[foodid])
@@ -30,6 +33,7 @@ function Homecoktail() {
         <Form onSubmitdata={mySearch}/>
       </div>
       <div>
+        {loading ? <CircularProgress className='progress' color="success"/> :<div>
         {cooktail.map((allthings)=>{
           const{image,title,ingredients}=allthings
           
@@ -44,13 +48,13 @@ function Homecoktail() {
               <Paper className='nutrition'>
                 <Typography color='secondary' variant='h6' ml={1}>{title}</Typography>
                 <img src={image} alt={title} className='img'/>
-                <hr></hr>
                 <Typography variant='h7' color='secondary'mt={2}>Ingredients</Typography>
                 <Typography color='success' ml={1}>{myArray}</Typography>
               </Paper>
             </>
           )
         })}
+        </div>}
       </div>
     </>
   )

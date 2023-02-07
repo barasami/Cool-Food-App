@@ -7,6 +7,7 @@ import { CircularProgress } from '@mui/material'
 
 
 function Homedesert() {
+  let ing=''
   const [allDesset,setallDessert]=useState([])
   const[loading,setLoading]=useState(true)
 
@@ -25,8 +26,14 @@ function Homedesert() {
       {loading ? <CircularProgress className='progress' color="success" /> : 
       <div>
         {allDesset.map((myburger)=>{
-          const{desc,name,images}=myburger
+          const{desc,name,images,ingredients}=myburger
           let small=images[0].sm
+
+          for (let ing = 0; ing < ingredients.length; ing++) {
+            const element = ingredients[ing];
+            ing += element
+            
+          }
           
           return(
             <div key={name}>
@@ -35,7 +42,7 @@ function Homedesert() {
                 <Typography marginLeft={3.3} padding={1}>{desc}</Typography>
                 <img src={small} alt={name} className='image2' bg-color='background.default'/>
                 <Typography color='secondary' variant='h6' marginLeft={3}>Ingredients</Typography>
-                
+                <Typography >{ing}</Typography>
               </Paper>
             </div>
           )
