@@ -29,11 +29,11 @@ function Homedesert() {
           const{desc,name,images,ingredients}=myburger
           let small=images[0].sm
 
-          for (let ing = 0; ing < ingredients.length; ing++) {
-            const element = ingredients[ing];
-            ing += element
-            
-          }
+          let myarr=ingredients.forEach(ingre => {
+            return(ingre);
+          });
+
+          console.log(myarr);
           
           return(
             <div key={name}>
@@ -42,7 +42,7 @@ function Homedesert() {
                 <Typography marginLeft={3.3} padding={1}>{desc}</Typography>
                 <img src={small} alt={name} className='image2' bg-color='background.default'/>
                 <Typography color='secondary' variant='h6' marginLeft={3}>Ingredients</Typography>
-                <Typography >{ing}</Typography>
+                <Typography >hello</Typography>
               </Paper>
             </div>
           )

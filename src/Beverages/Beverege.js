@@ -27,8 +27,16 @@ function Beverege() {
       {beverage.map((bev)=>{
         const{desc,name,img ,ingredients}=bev
         const small=img[0].sm
-        let myname=ingredients[0].name
-        let myimg=ingredients[0].img
+        // let myname=ingredients[0].name
+        // let myimg=ingredients[0].img
+        let mydrinks=ingredients.map(({id,img,name})=>{
+          return(
+            <div key={id}>
+              <img src={img} alt={name}/>
+              <Typography>{name}</Typography>
+            </div>
+          )
+        })
 
       
         
@@ -39,8 +47,9 @@ function Beverege() {
               <img src={small} alt={name} className='image'/>
               <Typography padding={2} marginLeft={1.5}>{desc}</Typography>
               <Typography variant='h6' color='secondary' pl={1}>Ingredients</Typography>
-              <Typography color='success' pl={3} >{myname}</Typography>
-              <img src={myimg} alt={myname} className='image'/>
+              <Typography>
+                {mydrinks}
+              </Typography>
             </Paper>
           </div>
         )
