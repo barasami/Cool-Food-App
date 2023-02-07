@@ -35,21 +35,32 @@ function Homecoktail() {
       <div>
         {loading ? <CircularProgress className='progress' color="success"/> :<div>
         {cooktail.map((allthings)=>{
-          const{image,title,ingredients}=allthings
+          const{image,title,ingredients,instructions}=allthings
           
           for (let a = 0; a < ingredients.length; a++) {
             const inredient = ingredients[a];
             myArray +=inredient   
               
           }
-          console.log(myArray);
+          let myistruction=instructions.map(({text})=>{
+            return(
+              <>
+                <ul>
+                  <li>{text}</li>
+                </ul>
+              </>
+
+            )
+          })
           return(
             <>
               <Paper className='nutrition'>
                 <Typography color='secondary' variant='h6' ml={1}>{title}</Typography>
                 <img src={image} alt={title} className='img'/>
-                <Typography variant='h7' color='secondary'mt={2}>Ingredients</Typography>
+                <Typography variant='h7' color='secondary'mt={2} ml={3}>Ingredients</Typography>
                 <Typography color='success' ml={1}>{myArray}</Typography>
+                <Typography p={2} ml={2} color='secondary' variant='h6'>Instructions</Typography>
+                <Typography ml={3}>{myistruction}</Typography>
               </Paper>
             </>
           )
