@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className='footer'>
         <div  className='footcontent'>
-          <p className='about'>About Me</p>
+          <a href='https://barasamicheal.netlify.app' className='about'>About Me</a>
           <p className='copyright'>&copy;Nutridata {thisYear},All rights reserved</p>
         </div>
     </footer>
