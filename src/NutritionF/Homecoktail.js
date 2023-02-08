@@ -13,7 +13,7 @@ const mySearch=(value)=>{
 
 
 function Homecoktail() {
-  let myArray=' '
+  
   const [cooktail,setCooktail]=useState([])
   const[foodid,setFoodid]=useState(1)
   const[loading,setLoading]=useState(false)
@@ -36,12 +36,19 @@ function Homecoktail() {
         {loading ? <CircularProgress className='progress' color="success"/> :<div>
         {cooktail.map((allthings)=>{
           const{image,title,ingredients,instructions}=allthings
+
+          let myArray=ingredients.map((ings)=>{
+            return(
+              <>
+                <ol>
+                  <li>{ings}</li>
+                </ol>
+
+              </>
+            )
+          })
           
-          for (let a = 0; a < ingredients.length; a++) {
-            const inredient = ingredients[a];
-            myArray +=inredient   
-              
-          }
+          
           let myistruction=instructions.map(({text})=>{
             return(
               <>
@@ -57,9 +64,9 @@ function Homecoktail() {
               <Paper className='nutrition'>
                 <Typography color='secondary' variant='h6' ml={1}>{title}</Typography>
                 <img src={image} alt={title} className='img'/>
-                <Typography variant='h7' color='secondary'mt={2} ml={3}>Ingredients</Typography>
+                <Typography variant='h7' color='secondary'mt={4} ml={3}>Ingredients</Typography>
                 <Typography color='success' ml={1}>{myArray}</Typography>
-                <Typography p={2} ml={2} color='secondary' variant='h6'>Instructions</Typography>
+                <Typography p={2} ml={2} color='secondary' variant='h6'>Preparation Instructions</Typography>
                 <Typography ml={3}>{myistruction}</Typography>
               </Paper>
             </>
