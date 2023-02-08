@@ -27,8 +27,6 @@ function Beverege() {
       {beverage.map((bev)=>{
         const{desc,name,img ,ingredients}=bev
         const small=img[0].sm
-        // let myname=ingredients[0].name
-        // let myimg=ingredients[0].img
         let mydrinks=ingredients.map(({id,img,name})=>{
           return(
             <div key={id}>
