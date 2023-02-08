@@ -32,8 +32,8 @@ function Beverege() {
         let mydrinks=ingredients.map(({id,img,name})=>{
           return(
             <div key={id}>
-              <img src={img} alt={name}/>
-              <Typography>{name}</Typography>
+              <img src={img} alt={name} className='image'/>
+              <>{name}</>
             </div>
           )
         })
