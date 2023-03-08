@@ -6,17 +6,18 @@ import { CircularProgress } from '@mui/material'
 
 import { myCooktail } from './nutrition'
 
-const mySearch=(value)=>{
-  return value
-}
-
-
 
 function Homecoktail() {
-  
   const [cooktail,setCooktail]=useState([])
   const[foodid,setFoodid]=useState(1)
   const[loading,setLoading]=useState(false)
+
+  const mySearch=(value)=>{
+    setFoodid(value)
+  }
+  
+  
+  
   useEffect(()=>{
     setLoading(true)
     myCooktail(foodid)
