@@ -15,11 +15,13 @@ function Form({onSubmitdata}) {
     <>
         <form onSubmit={handleSubmit}>
             <TextField
+                label="Number of Ingredients"
+                id="outlined-size-small"
+                defaultValue="Small"
+                size="small"
                 className='txtfield'
-                required
-                id="outlined-required"
-                label="Enter your Food"
                 value={food}
+                color='success'
                 onChange={e=>setFood(e.target.value)}
             />
             <button onClick={handleSubmit} className='button'>

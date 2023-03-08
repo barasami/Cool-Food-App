@@ -8,13 +8,8 @@
     height: 3em;
 }
 .button{
-    height: 4.1em;
-    padding: 4px;
-    margin-left:1em;
-    border:1px solid gray;
-    color: white;
-    font-family: cursive;
-    border-radius: 3px;
-    background-color: rgb(114, 154, 114);
+    padding: .7em;
+    margin-left: .7em;
+
 }
 
