@@ -9,7 +9,10 @@
     height: 8vh;
     left: 0;
     width: 100%;
-    background: linear-gradient(rgba(7, 198, 93, 0.3),rgba(2, 82, 38, 0.3));
+    background-color: seagreen;
+    color: white;
+    font-family: cursive;
+    padding-top: 1em;
 }
 .footcontent{
     display: flex;

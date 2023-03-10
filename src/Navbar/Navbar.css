@@ -5,13 +5,15 @@
 }
 .nav{
     display: flex;
-    margin: .2em;
-    padding: .3em;
+    padding: .2em;
+    margin-bottom: .2em;
+    background-color: seagreen;
+    position: fixed;
+    width: 100%;
 }
 .sidenav{
     display: flex;
     margin: .2em;
-    padding: .3em;
-    
+    padding: .3em; 
 
 }
