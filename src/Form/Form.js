@@ -19,7 +19,6 @@ function Form({onSubmitdata}) {
                 id="outlined-size-small"
                 defaultValue="Small"
                 size="small"
-                className='txtfield'
                 value={food}
                 color='success'
                 onChange={e=>setFood(e.target.value)}

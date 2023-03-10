@@ -4,84 +4,14 @@
     margin: 0;
 }
 .nav{
-    height: 85vh;
-    padding-right: 1em;
-    position:fixed;
-    margin-top: 1em;
-    margin-left: .6em;
-    width: 20%;
-    color: white;
-    font-weight: lighter;
-    font-size: larger;
-    margin-bottom: 1em;
-    background:linear-gradient(rgba(6, 71, 5, 0.3),rgba(13, 230, 13, 0.3)),url('..//../public/Images/Onions.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-   
+    display: flex;
+    margin: .2em;
+    padding: .3em;
 }
-.title{
-    text-align: center;
-    text-transform: capitalize;
-    font-weight:normal;
-   
-}
-.line{
-    width: 80%;
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: .4em;
-
-}
-.icon{
-    color: white;
-}
-.mlink{
-    text-decoration: none;
-    color: white;
-    font-weight:250;
-}
-
-.coolTittle{
-    margin-top: .6em;
-    height: 30vh;
-    padding: 2px;
-}
-
 .sidenav{
-    height: 20px;
-    padding: 2em;
-
-}
-.home{
-    margin-top: 1em;
-    padding: 3px;
-    background-color: rgba(6, 22, 6, 0.3);
-    border: 1px solid white;
-
-}
-.drink{
-    margin-top: 1.5em;
-    padding: 3px;
-    background-color: rgba(6, 22, 6, 0.3);
-    border: 1px solid white;
-
-}
-.food{
-    margin-top: 1.5em;
-    padding: 3px;
-    background-color: rgba(6, 22, 6, 0.3);
-    border: 1px solid white;
-
-}
-.switch{
-    margin-top: 1.5em;
-    padding: 3px;
-    background-color: rgba(6, 22, 6, 0.3);
-    border: 1px solid white;
+    display: flex;
+    margin: .2em;
+    padding: .3em;
     
 
-}
-.switching{
-    
 }
