@@ -2,18 +2,34 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 .nav{
-    display: flex;
-    padding: .2em;
-    margin-bottom: .2em;
-    background-color: seagreen;
-    position: fixed;
+    height: 2.5em;
     width: 100%;
-}
-.sidenav{
+    background-color: seagreen;
+    margin-bottom: 1.6em;
     display: flex;
-    margin: .2em;
-    padding: .3em; 
 
 }
+.coolTittle{
+    color: white;
+    margin-left: 1em;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.sidenav{
+  float: inline-end;
+}
+.mlink{
+    display: inline-block;
+    line-height: 2em;
+    color: white;
+    text-transform: uppercase;
+    margin: .4em;
+    justify-content: flex-end;
+    line-height: 1.1em;
+}
+
