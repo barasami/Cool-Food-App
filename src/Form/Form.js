@@ -12,10 +12,10 @@ function Form({onSubmitdata}) {
         setFood('')
     }
   return (
-    <>
+    <div className='form'>
         <form onSubmit={handleSubmit}>
             <TextField
-                label="Number of Ingredients"
+                label="Total spices"
                 id="outlined-size-small"
                 defaultValue="Small"
                 size="small"
@@ -23,12 +23,12 @@ function Form({onSubmitdata}) {
                 color='success'
                 onChange={e=>setFood(e.target.value)}
             />
-            <button onClick={handleSubmit} className='button'>
+            <button onClick={handleSubmit} className='btn'>
                 Search
             </button>
         </form>
         
-    </>
+    </div>
   )
 }
 

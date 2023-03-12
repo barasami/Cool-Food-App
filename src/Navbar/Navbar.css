@@ -5,31 +5,30 @@
     text-decoration: none;
 }
 .nav{
-    height: 2.5em;
-    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3em;
     background-color: seagreen;
+    width: 100%;
+    color: white;
     margin-bottom: 1.6em;
-    display: flex;
-
+    position:sticky;
+    
 }
 .coolTittle{
     color: white;
     margin-left: 1em;
     font-weight: bold;
-    line-height: 2em;
     letter-spacing: .2em;
     text-transform: uppercase;
 }
-.sidenav{
-  float: inline-end;
-}
 .mlink{
-    display: inline-block;
-    line-height: 2em;
+    padding: 1em;
     color: white;
     text-transform: uppercase;
-    margin: .4em;
-    justify-content: flex-end;
-    line-height: 1.1em;
+} 
+.mlink:hover{
+    color:goldenrod;
 }
 

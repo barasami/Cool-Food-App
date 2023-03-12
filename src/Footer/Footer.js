@@ -5,12 +5,14 @@ const thisYear=new Date().getFullYear()
 
 function Footer() {
   return (
-    <footer className='footer'>
+    <div className='myfooter'>
+      <footer className='footer'>
         <div  className='footcontent'>
-          <a href='https://barasamicheal.netlify.app' className='about'>About Me</a>
-          <p className='copyright'>&copy;Nutridata {thisYear},All rights reserved</p>
+          <p className='mytxt'><a href='https://barasamicheal.netlify.app' className='about'>About Me</a></p>
+          <p className='copyright'>&copy;Spices Hub {thisYear},All rights reserved</p>
         </div>
-    </footer>
+      </footer>
+    </div>
   )
 }
 

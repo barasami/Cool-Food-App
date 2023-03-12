@@ -3,6 +3,22 @@
     margin: 0px;
     padding: 0px;
 }
+.form{
+    margin-left: 37%;
+    margin-right: 37%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2em;
+
+}
+.btn{
+    padding: .77em;
+    margin-left: .4em;
+    border: 1.9px solid seagreen;
+    border-radius: 3px;
+    background-color: seagreen;
+    color: white;
+}
 
 
 
