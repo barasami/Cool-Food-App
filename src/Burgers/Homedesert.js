@@ -31,15 +31,18 @@ function Homedesert() {
 
           let burger=ingredients.map(({id,img,name})=>{
             return(
-              <div key={id}>
-                <table>
-                  <th>{name}</th>
-                  <tbody>
+              <table key={id} className='table'>
+                <tr>
+                  <td>
+                    {name}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     <img src={img} alt={name}/>
-                  </tbody>
-                </table>
-
-              </div>
+                  </td>
+                </tr>
+              </table>
             )
 
           })

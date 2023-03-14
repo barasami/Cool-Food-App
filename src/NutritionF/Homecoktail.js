@@ -65,7 +65,7 @@ function Homecoktail() {
               <Paper className='nutrition'>
                 <Typography color='secondary' variant='h6' ml={1}>{title}</Typography>
                 <img src={image} alt={title} className='img'/>
-                <Typography>Ingredients</Typography>
+                <Typography color='secondary' ml={2} variant='h6'>Ingredients</Typography>
                 <Typography color='success' ml={3} mt={2}>{myArray}</Typography>
                 <Typography p={2} ml={2} color='secondary' variant='h6'>Preparation Instructions</Typography>
                 <Typography ml={3}>{myistruction}</Typography>

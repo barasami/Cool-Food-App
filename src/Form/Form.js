@@ -21,6 +21,7 @@ function Form({onSubmitdata}) {
                 size="small"
                 value={food}
                 color='success'
+                className='input'
                 onChange={e=>setFood(e.target.value)}
             />
             <button onClick={handleSubmit} className='btn'>
