@@ -29,7 +29,7 @@ function Homecoktail() {
   },[foodid])
  
   return (
-    <>
+    <div >
       <div>
         <Form onSubmitdata={mySearch}/>
       </div>
@@ -61,7 +61,7 @@ function Homecoktail() {
             )
           })
           return(
-            <>
+            <div>
               <Paper className='nutrition'>
                 <Typography color='secondary' variant='h6' ml={1} className='titles'>{title}</Typography>
                 <img src={image} alt={title} className='img'/>
@@ -70,12 +70,12 @@ function Homecoktail() {
                 <Typography p={2} ml={2} color='secondary' variant='h6'>Preparation Instructions</Typography>
                 <Typography ml={3}>{myistruction}</Typography>
               </Paper>
-            </>
+            </div>
           )
         })}
         </div>}
       </div>
-    </>
+    </div>
   )
 }
 

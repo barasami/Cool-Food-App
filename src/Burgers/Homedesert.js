@@ -22,7 +22,7 @@ function Homedesert() {
   },[])
 
   return (
-    <>
+    <div>
       {loading ? <CircularProgress className='progress' color="success" /> : 
       <div>
         {allDesset.map((myburger)=>{
@@ -60,7 +60,7 @@ function Homedesert() {
           )
         })}
      </div>}
-    </>
+    </div>
   )
 }
 

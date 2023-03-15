@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { allBeverage } from './beverage'
 import './Beverage.css'
-import { Paper,Typography } from '@mui/material'
+import { Card, Paper,Typography } from '@mui/material'
 import { CircularProgress } from '@mui/material'
 
 
@@ -45,8 +45,8 @@ function Beverege() {
       
         
         return(
-          <div key={name}>
-            <div elevation={2} className='beverage'>
+          <div key={name} className='backimg'>
+            <Card elevation={2} className='beverage'>
               <Typography color='#00a152' padding={1} variant='h5' className='text'>{name}</Typography>
               <img src={small} alt={name} className='image'/>
               <Typography padding={2} marginLeft={1.5}>{desc}</Typography>
@@ -54,7 +54,7 @@ function Beverege() {
               <Typography>
                 {mydrinks}
               </Typography>
-            </div>
+            </Card>
           </div>
         )
       })}
