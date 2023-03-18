@@ -9,10 +9,6 @@
   margin-right: 15%;
   align-items: center;
   margin-bottom: 1em;
-  background-image: url(../../public/Images/Cake.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
 }
 .progress{

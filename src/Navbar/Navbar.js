@@ -2,6 +2,8 @@ import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 import Switch from '@mui/material/Switch';
+import DehazeIcon from '@mui/icons-material/Dehaze';
+import ClearIcon from '@mui/icons-material/Clear';
 
 
 
