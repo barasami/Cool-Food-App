@@ -30,11 +30,42 @@
 .mlink:hover{
     color:goldenrod;
 }
+.icon{
+    display: none;
+}
+.show{
+    font-weight: bold;
+}
+.hide{
+    font-weight: bold;
+}
 
 @media screen and (max-width:500px) {
-    .mlink{
-        position: absolute;
+    .coolTittle{
+        padding: .7em;
     }
-    
+    .icon{
+        display: contents;
+        padding-right: .3em;
+    }
+    .sidenav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: seagreen;
+        top:3em;
+        /* initially zero to -100 */
+        left: -100%; 
+        text-align: center;
+        transition: all .5s;
+    }
+    .mlink{
+        display: block;
+        line-height: 2em;
+        font-weight: bold;
+    }
+    .mlink:active,.mlink:hover{
+        color: goldenrod;
+    }
 }
 
