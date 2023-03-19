@@ -22,3 +22,26 @@
 .titles{
     text-transform: capitalize;
 }
+
+@media screen and (max-width:500px) {
+    .titles{
+        text-decoration: underline;
+        letter-spacing: .2em;
+        font-weight: lighter;
+    }
+    .nutrition{
+        margin-left:5% ;
+        margin-right: 5%;
+        align-items: center;
+        margin-bottom: 2em;
+        
+    }
+    .img{
+        height: 60%;
+        width: 60%;
+        margin-bottom: .6em;
+        margin-left: 1em;
+        padding: 1em;
+    }
+    
+}
