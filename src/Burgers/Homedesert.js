@@ -39,7 +39,7 @@ function Homedesert() {
                 </tr>
                 <tr>
                   <td>
-                    <img src={img} alt={name}/>
+                    <img src={img} alt={name} className='coolimg'/>
                   </td>
                 </tr>
               </table>

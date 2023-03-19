@@ -26,5 +26,28 @@
 .table{
     width: 100%;
 }
+@media screen and (max-width:500px) {
+    .burger{
+        margin-left:5% ;
+        margin-right: 5%;
+        align-items: center;
+        margin-bottom: 1em;
+        color: white;
+    }
+    .image2{
+        margin-left: .9em;
+        border-radius: .2em;
+        height: 7em;
+        width: 7em;
+    }
+    .coolimg{
+        margin-left: .9em;
+        border-radius: .2em;
+        height: 5em;
+        width: 5em;
+
+    }
+    
+}
 
 
