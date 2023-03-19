@@ -28,4 +28,25 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width:500px) {
+  .beverage{
+    margin-left:5% ;
+    margin-right: 5%;
+    align-items: center;
+    margin-bottom: 1em;
+    color: white;
+  }
+  .text{
+    text-decoration: underline;
+    letter-spacing: .4em;
+    font-family: fantasy;
+  }
+  .image{
+    margin-left: .4em;
+    border-radius: .4em;
+    height: 5em;
+    width: 3em;
+  }
+  
+}
 
