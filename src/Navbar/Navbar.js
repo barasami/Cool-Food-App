@@ -18,14 +18,14 @@ function Navbar({mode,setMode}) {
        Spices Hub
       </div>
 
-      <div className='sidenav'>
+      <div className='icon' onClick={Openme}>
+        { menu ?<DehazeIcon className='show'/> : <ClearIcon className='hide'/> }
+      </div>
+      <div className={menu ? 'sidenav' : 'closeside'}>
         <Link to='/' className='mlink'>Home</Link>
         <Link to='/drinks' className='mlink'>Drinks</Link>
         <Link to='/burgers' className='mlink'>Burger</Link>
         <Switch className='switching' defaultChecked color='default' onChange={e=>setMode(mode  === 'light'?'dark' : 'light')}/>
-      </div>
-      <div className='icon' onClick={Openme}>
-        { menu ?<DehazeIcon className='show'/> : <ClearIcon className='hide'/> }
       </div>
     </nav>
   )
