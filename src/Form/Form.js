@@ -20,7 +20,7 @@ function Form({onSubmitdata}) {
                 defaultValue="Small"
                 size="small"
                 value={food}
-                color='success'
+                color="success"
                 className='input'
                 onChange={e=>setFood(e.target.value)}
             />
