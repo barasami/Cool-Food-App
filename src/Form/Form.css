@@ -20,6 +20,10 @@
     background-color: seagreen;
     color: white;
 }
+.input{
+    border: none;
+
+}
 
 
 @media screen and (max-width: 1130px) {
