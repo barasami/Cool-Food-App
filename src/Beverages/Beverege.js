@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { allBeverage } from './beverage'
 import './Beverage.css'
-import { Card, Paper,Typography } from '@mui/material'
+import { Card,Typography } from '@mui/material'
 import { CircularProgress } from '@mui/material'
 
 
